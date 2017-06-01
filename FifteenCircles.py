@@ -3,6 +3,8 @@ from collections import Counter
 def fifteenCircles():
 	print("input the number -> ", end = " ")
 	target = int(input())
+	# result = []
+	count = 0
 	print("Calculating...")
 	for bottomFirst in range(target):
 		for bottomSecond in range(target):
@@ -26,21 +28,25 @@ def fifteenCircles():
 							countFourth = Counter(fourthLine)
 							counter = countFirst + countSecond + countThird + countFourth
 							if(len(counter) == 14):
-								print("result:")
+								count += 1
+								print("result: < %d >" % count)
 								print(str(result))
 								print(fourthLine[0], fourthLine[1])
 								print(thirdLine[0], thirdLine[1], thirdLine[2])
 								print(secondLine[0], secondLine[1], secondLine[2], secondLine[3])
 								print(firstLine[0], firstLine[1], firstLine[2], firstLine[3], firstLine[4])
-								print("finish")
-								return
+								print()
 							else:
 								countFirst = ()
 								countSecond = ()
 								countThird = ()
 								countFourth = ()
 								couner = Counter()
-	print("false")
+	if (count == 0):
+		print("false")
+	else:
+		print("finish")
+	return
 
 def main():
 	fifteenCircles()
