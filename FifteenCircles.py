@@ -3,7 +3,6 @@ from collections import Counter
 def fifteenCircles():
 	print("input the number -> ", end = " ")
 	target = int(input())
-	# result = []
 	count = 0
 	print("Calculating...")
 	for bottomFirst in range(target):
