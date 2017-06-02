@@ -7,6 +7,8 @@
 
 全ての数字は異なるものになります。
 
+Pythonだと遅すぎるので，Cの方がいいです。
+
 以下にイメージ図を示します。
 
 <img src="http://i.imgur.com/tLgQI1I.jpg" width="200">
